@@ -1,0 +1,129 @@
+/* Step 3 – Beginning CSS */
+
+/* Normalize spacing and sizing */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base page styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f8f9fa;
+  max-width: 72ch;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header and navigation */
+header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.75rem;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.25rem 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+main section {
+  margin-bottom: 1.75rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Figure */
+figure {
+  margin: 0 0 1.75rem 0;
+}
+
+figure img {
+  max-width: 100%;
+  display: block;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font: inherit;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  background: #222;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #ddd;
+  padding-top: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Mobile-first responsiveness */
+@media (min-width: 700px) {
+  body {
+    padding: 2rem;
+  }
+
+  form {
+    max-width: 600px;
+  }
+}
